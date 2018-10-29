@@ -1,0 +1,708 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Media Center Concept</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	<link href="resources/style/style.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<script src ="resources/js/jquery-11.0.min.js"></script>
+	<script src ="resources/js/jquery.ready.js"></script>
+</head>
+
+<body>
+	
+	<header class="flex middle center">
+		<div class="maxW flex middle between rowNoWrap" style="width: 100%;">
+			<img alt="Peace Center Logo" src="resources/images/pclogo.png">
+			<a href="#" class="toggle" style="position: relative; z-index: 25;">Open Menu</a>
+		</div>
+	</header>
+	<nav class="mainMenu">
+		<ul class="flex rowNoWrap center">
+			<li class="top"><a href="performances.html">Performances</a></li>
+			<li class="top"><a href="institution.html">Institutional Materials</a></li>
+			<li class="top"><a href="mailto:tmcnamara@peacecenter.org">Contact</a></li>
+			<li class="top"><a href="https://www.peacecenter.org">Main Site</a></li>
+			<li class="top"><a href="index.html">Logout</a></li>
+		</ul>
+	</nav>	
+	<div class="mediaBody maxW flex middle columnNoWrap" style="width: 100%; min-height: calc((100vh - 222px) - 10rem);">
+		<div class="mediaIntro" style="margin: 0 0 1rem;">
+			<h1 id="top">Performance Materials</h1>
+			<p>
+			Welcome to the Media Center for the Peace Center.<br><br>
+
+			This information is provided for accredited members of the media only and is to be used for editorial purposes. Please be sure to use any provided photo credits and identifications. This information is sometimes found in the file name.<br><br>
+
+			Materials are grouped together by performance and listed in date order below. To download high resolution photos click on the desired photo. To download press releases and videos, click on the desired text link.<br><br>
+
+			For questions or more information, contact Tara McNamara at <a href="mailto:tmcnamara@peacecenter.org">tmcnamara@peacecenter.org</a> or 864.679.9225.
+			</p>
+			<h2>Recent News</h2>
+			<div class="flex rowWrap news" style="margin: 0 0 3rem;">
+				<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="linkbox">Press Release - 2018-2019 Broadway Series</a>
+				<a href="https://tickets.peacecenter.orghttps://tickets.peacecenter.org/ArticleMedia/Files/LynnHartonnamedboardchair.docx" class="linkbox">Press Release - Lynn Harton Named Board Chair</a>
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Chamber-2018-19-34652b2a3d.docx" class="linkbox">Press Release - 2018-2019 Peace Chamber Series</a>
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="linkbox">Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-df6afec110.docx" class="linkbox">Press Release - Peace Voices</a>
+				<a href="https://www.peacecenter.org/assets/doc/Singer-songwriters-5982a101fc.docx" class="linkbox">Press Release - Singer Songwriters</a>
+				<a href="https://www.peacecenter.org/assets/doc/Jeanne-Robertson-946df5e44f.docx" class="linkbox">Press Release - Jeanne Robertson</a>
+				<a href="https://www.peacecenter.org/assets/doc/The-B-52s-b31f880b13.docx" class="linkbox">Press Release - The B-52s</a>
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-Songwriters-7015b006dc.docx" class="linkbox">Press Release - Songwriter Series</a>
+				<a href="https://www.peacecenter.org/assets/doc/Fine-Arts-Center-Jazz-Series-0ae578caa0.docx" class="linkbox">Press Release - Fine Arts Center Jazz Series</a>
+				<a href="https://www.peacecenter.org/assets/doc/Drew-and-Ellie-Holcomb-51a7bd0b4b.docx" class="linkbox">Press Release - The You and Me Tour: An Evening with Drew & Ellie Holcomb</a>
+			</div>
+			<h2>Institutional Materials</h2>
+			<p>To view Peace Center institutional materials, <a href="institution.html">click here</a>.</p>
+			<h2>Performances</h2>
+			<ul class="filterList flex rowWrap">
+				<li class="filter" style="font-weight: bold; opacity: 1;">Filters:</li>
+				<li class="filter" id="all">Show All</li>
+				<li class="filter" id="broadway">Broadway</li>
+				<li class="filter" id="singles">Single Night</li>
+				<li class="filter" id="cultural">Cultural Programs</li>
+				<li class="filter" id="community">Community Impact</li>
+				<li class="filter" id="passport">Passport Series</li>
+			</ul>
+			<div class="jumpBox flex rowWrap">
+				<a href="#Anastasia" class="linkbox broadway">Anastasia</a>
+				<a href="#jazz1" class="linkbox community">Contemporary Jazz and R&B</a>
+				<a href="#Women" class="linkbox passport">Women of the World (Passport Field Trip Series)</a>
+				<a href="#songwriter1" class="linkbox community">An Evening of Original Music with Edwin McCain, Maia Sharp, and Phillip Lammonds</a>
+				<a href="#Rector" class="linkbox singles">Ben Rector – Magic: The Tour</a>
+				<a href="#Fleck" class="linkbox cultural">Béla Fleck, Zakir Hussain, Edgar Meyer</a>
+				<a href="#b52" class="linkbox singles">The B-52s</a>
+				<a href="#Stills" class="linkbox singles">Stephen Stills & Judy Collins</a>
+				<a href="#VOCES8" class="linkbox community">VOCES8</a>
+				<a href="#orbison" class="linkbox singles">Roy Orbison</a>
+				<a href="#Ballet2" class="linkbox cultural">Ballet Folklórico de México</a>
+				<a href="#Ballet" class="linkbox passport">Ballet Folklórico de México (Passport Field Trip Series)</a>
+				<a href="#Dorrance" class="linkbox cultural">Dorrance Dance</a>
+				<a href="#poet3" class="linkbox community">Palmetto Poets: As We Breathe We Hope</a>
+				<a href="#Hamilton" class="linkbox broadway">Hamilton</a>
+				<a href="#Southern" class="linkbox passport">Southern Voices (Passport Field Trip Series)</a>
+				<a href="#poet4" class="linkbox community">Southern Voices: Black, White, and Blues</a>
+				<a href="#sierra" class="linkbox singles">Sierra Hull</a>
+				<a href="#Saigon" class="linkbox broadway">Miss Saigon</a>
+				<a href="#songwriter2" class="linkbox community">An Evening of Original Music with Edwin McCain, Maia Sharp, and Gabe Dixon</a>
+				<a href="#Erth" class="linkbox passport">Erth's Prehistoric Aquarium (Passport Field Trip Series)</a>
+				<a href="#Harriets" class="linkbox passport">The Three Harriets (Passport Field Trip Series)</a>
+				<a href="#Bronx" class="linkbox broadway">A Bronx Tale</a>
+				<a href="#David" class="linkbox passport">David Drake (Dave the Potter) (Passport Field Trip Series)</a>
+				<a href="#Call" class="linkbox passport">Call of the Wild: Illustrated Edition (Passport Field Trip Series)</a>
+				<a href="#Berlin" class="linkbox community">Berlin Philharmonic Wind Quintet</a>
+				<a href="#holcomb" class="linkbox singles">An Evening with Drew & Ellie Holcomb</a>
+				<a href="#Jerry" class="linkbox singles">Jerry Lee Lewis</a>
+				<a href="#Russian" class="linkbox cultural">Russian National Orchestra</a>
+				<a href="#PianoGuys" class="linkbox singles">ThePianoGuys</a>
+				<a href="#Lara" class="linkbox community">Lara St. John</a>
+				<a href="#Sybarite" class="linkbox community">Sybarite5</a>
+				<a href="#Sybarite2" class="linkbox passport">Sybrate5 (Passport Field Trip Series)</a>
+				<a href="#Currents" class="linkbox passport">Currents by Mayumana (Passport Field Trip Series)</a>
+				<a href="#Currents2" class="linkbox cultural">Currents by Mayumana</a>
+				<a href="#jazz2" class="linkbox community">The Great American Songbook</a>
+				<a href="#songwriter3" class="linkbox community">An Evening of Original Music with Edwin McCain, Maia Sharp, and Jill Sobule</a>
+				<a href="#Mormon" class="linkbox broadway">The Book of Mormon</a>
+				<a href="#Dog" class="linkbox cultural">Tap Dogs</a>
+				<a href="#poet5" class="linkbox community">He Said / She Said</a>
+				<a href="#patton" class="linkbox singles">Patton Oswalt</a>
+				<a href="#poet6" class="linkbox community">A Poet’s Dream: Past & Present</a>
+				<a href="#Avital" class="linkbox community">Avital meets Avital</a>
+				<a href="#Avital2" class="linkbox passport">Avital meets Avital (Passport Field Trip Series)</a>
+				<a href="#CFA" class="linkbox broadway">Come From Away</a>
+				<a href="#Villalobos" class="linkbox passport">Villalobos Brothers (Passport Field Trip Series)</a>
+				<a href="#jazz3" class="linkbox community">Jazz and Beyond</a>
+				<a href="#songwriter4" class="linkbox community">An Evening of Original Music with Edwin McCain, Maia Sharp, and David Wilcox</a>
+				<a href="#Illusion" class="linkbox singles">The Illusionists: Live From Broadway</a>
+				<a href="#Harlem" class="linkbox cultural">Dance Theatre of Harlem</a>
+				<a href="#jeanne" class="linkbox singles">Jeanne Robertson</a>
+				<a href="#Dolly" class="linkbox broadway">Hello, Dolly!</a>
+				<a href="#poet7" class="linkbox community">Lineage and Place</a>
+				<a href="#Hansen" class="linkbox broadway">Dear Evan Hansen</a>
+			</div>
+		</div>
+		
+		<!--Performances Content-->
+		<div class="performances">
+			<div class="mediabox broadway" id="Anastasia">
+				<h4>Anastasia | October 23-28</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+					<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a>
+					<a href="https://www.peacecenter.org/assets/doc/Anastasia-lottery-af49d18510.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Anastasia Lottery</a>
+					<a href="https://1drv.ms/v/s!AoZLkE-UE1echCVvE-BVR9Qwfo4x" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Anastasia</a>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/1-Victoria-Bingham-Little-Anastasia-and-Joy-Franz-Dowager-Empress-in-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-02fae50050.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/1-Victoria-Bingham-Little-Anastasia-and-Joy-Franz-Dowager-Empress-in-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-d1cf433cdd.jpg"/></a><span>Victoria Bingham (Little Anastasia) and Joy Franz (Dowager Empress) in the National Tour of ANASTASIA. Photo by Evan Zimmerman, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/2-Lila-Coogan-Anya-and-Stephen-Brower-Dmitry-in-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-789e501f58.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/2-Lila-Coogan-Anya-and-Stephen-Brower-Dmitry-in-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-7395b6678f.jpg"/></a><span>Lila Coogan (Anya) and Stephen Brower (Dmitry) in the National Tour of ANASTASIA. Photo by Matthew Murphy, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/3-Lila-Coogan-Anya-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-6716645591.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/3-Lila-Coogan-Anya-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-6716645592-f3c6cc362f.jpg"/></a><span>Lila Coogan (Anya) and the company of the National Tour of ANASTASIA. Photo by Evan Zimmerman, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/4-Jason-Michael-Evans-Gleb-in-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-384a99c65d.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/4-Jason-Michael-Evans-Gleb-in-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-987ad7d628.jpg"/></a><span>Jason Michael Evans (Gleb) in the National Tour of ANASTASIA. Photo by Matthew Murphy, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/5-Lila-Coogan-Anya-in-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-8a42fd09fd.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/5-Lila-Coogan-Anya-in-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-f3d7943581.jpg"/></a><span>Lila Coogan (Anya) in the National Tour of ANASTASIA. Photo by Matthew Murphy, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/6-Edward-Staudenmayer-Vlad-Lila-Coogan-Anya-Stephen-Brower-Dmitry-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-42e97bef64.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/6-Edward-Staudenmayer-Vlad-Lila-Coogan-Anya-Stephen-Brower-Dmitry-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-ed709de5b5.jpg"/></a><span>Edward Staudenmayer (Vlad), Lila Coogan (Anya), Stephen Brower (Dmitry) and the company of the National Tour of ANASTASIA. Photo by Evan Zimmerman, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/7-Edward-Staudenmayer-Vlad-Tari-Kelly-Countless-Lily-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-84de02aa08.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/7-Edward-Staudenmayer-Vlad-Tari-Kelly-Countless-Lily-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Matthew-Murphy-MurphyMade-d49e720c02.jpg"/></a><span>Edward Staudenmayer (Vlad), Tari Kelly (Countless Lily) and the company of the National Tour of ANASTASIA. Photo by Matthew Murphy, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/8-Lila-Coogan-Anya-Stephen-Brower-Dmitry-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-e25857a603.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/8-Lila-Coogan-Anya-Stephen-Brower-Dmitry-and-the-company-of-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-a0ec838e1e.jpg"/></a><span>Lila Coogan (Anya), Stephen Brower (Dmitry) and the company of the National Tour of ANASTASIA. Photo by Evan Zimmerman, MurphyMade.</span></span>
+					<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/9-Lila-Coogan-Anya-and-Stephen-Brower-Dmitry-in-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-fc597e813b.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/9-Lila-Coogan-Anya-and-Stephen-Brower-Dmitry-in-the-National-Tour-of-ANASTASIA.-Photo-by-Evan-Zimmerman-MurphyMade-ef3b7152a9.jpg"/></a><span>Lila Coogan (Anya) and Stephen Brower (Dmitry) in the National Tour of ANASTASIA. Photo by Evan Zimmerman, MurphyMade.</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="jazz1">
+				<h4>Contemporary Jazz and R&B | October 31</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Fine-Arts-Center-Jazz-Series-0ae578caa0.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Fine Arts Center Jazz Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/FY19-Fine-Arts-Center-jazz-band-d2299c7e9b.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/FY19-Fine-Arts-Center-jazz-band-c64b8e4abd.jpg"/></a><span>Fine Arts Center Jazz Band</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Women">
+				<h4>Women of the World (Passport Field Trip Series) | October 31 – November 2</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Women-of-the-World-8cd1a54389.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-women.jpg"/></a><span>Women of the World</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="songwriter1">
+				<h4>An Evening of Original Music with Edwin McCain, Maia Sharp, and Phillip Lammonds | November 2</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-Songwriters-7015b006dc.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Songwriter Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Phillip-Lammonds-7cdcdda978.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Phillip-Lammonds-d64bb77f2f.jpg"/></a><span>Phillip Lammonds</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="Rector">
+				<h4>Ben Rector – Magic: The Tour | November 5</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Ben-Rector-press-release-c25f2042e6.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Ben Rector</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/BenRector-52e53432b6.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-BenRector-50062062a5.jpg"/></a><span>Ben Rector</span></span>
+				</div>
+			</div>
+			<div class="mediabox cultural" id="Fleck">
+				<h4>Béla Fleck, Zakir Hussain, Edgar Meyer | November 6</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Music-events-added-0fadb1c93a.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Music Events</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/FleckHussainMeyer-creditJimMcGuire-385b084c99.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-FleckHussainMeyer-creditJimMcGuire-16f91c87de.jpg"/></a><span>Béla Fleck, Zakir Hussain, Edgar Meyer by Jim McGuire</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="b52">
+				<h4>The B-52s | November 8</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/The-B-52s-b31f880b13.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - The B-52s</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/b521-a71ddfb078.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/b521-af308b81cf.jpg"/></a><span>The B-52s by Pieter M. Van Hattem</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/b522-2608ff7963.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/b522-116c764430.jpg"/></a><span>The B-52s by Pieter M. Van Hattem</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="Stills">
+				<h4>Stephen Stills & Judy Collins | November 9</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Stephen-Stills-Judy-Collins-cf1d4cc26f.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Stephen Stills & Judy Collins</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Stills-Collins-Photo-1-c05fef3a2b.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-stills-thumb-403b773867.jpg"/></a><span>Stephen Stills & Judy Collins</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="VOCES8">
+				<h4>VOCES8 | November 13</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Chamber-2018-19-34652b2a3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Chamber Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Voces8-credit-andy_staples-22f61b60f5.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-voces.jpg"/></a><span>VOCES8 by Andy Staples</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="orbison">
+				<h4>In Dreams: Roy Orbison - The Hologram Tour | November 14</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Roy-Orbison-5736fd16d6.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - In Dreams: Roy Orbison - The Hologram Tour</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echDU2kkccqw1pkRMf" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - In Dreams: Roy Orbison - The Hologram Tour</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Orbison1-6d4dda752a.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Orbison1-a908271d09.jpg"/></a><span>Roy Orbison</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Orbison2-a243adc0d7.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Orbison2-00d5c77ce5.jpg"/></a><span>Roy Orbison</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Orbison3-a44e574c1c.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Orbison3-714e22942e.jpg"/></a><span>Roy Orbison</span></span>
+				</div>
+			</div>
+			<div class="mediabox cultural" id="Ballet2">
+				<h4>Ballet Folklórico de México | November 15</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Dance-events-added-afcaeecb3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Dance Events</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echC2LsjP8hCa_JRVe" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Ballet Folklórico de México</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Ballet-Folklorico-de-Mexico-934301a167.JPG" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-ballet.jpg"/></a><span>Ballet Folklórico de México</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Ballet-Folklorico-Fiesta-en-Tlacotalpan-2-e5a2332041.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Ballet-Folklorico-Fiesta-en-Tlacotalpan-2-af537046fb.jpg"/></a><span>Ballet Folklórico de México</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Ballet-Folklorico-Veracruz-2bc20547d1.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Ballet-Folklorico-Veracruz-7e07c698be.jpg"/></a><span>Ballet Folklórico de México</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Ballet">
+				<h4>Ballet Folklórico de México (Passport Field Trip Series) | November 16</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Ballet-Folklorico-de-Mexico-934301a167.JPG" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-ballet.jpg"/></a><span>Ballet Folklórico de México</span></span>
+				</div>
+			</div>
+			<div class="mediabox cultural" id="Dorrance">
+				<h4>Dorance Dance | November 18</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Dance-events-added-afcaeecb3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Dance Events</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echC4wnqPs8ETjgCEq" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Dorrance Dance</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/DorranceDance-MyelinationPromo-Photoby-MatthewMurphy-Dancers-MichelleDorrance-ByronTittle-bb2c9c975e.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/DorranceDance-MyelinationPromo-Photoby-MatthewMurphy-Dancers-MichelleDorrance-ByronTittle-7485883a1b.jpg"/></a><span>Michelle Dorrance and Byron Tittle © Matthew Murphy</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/DorranceDance-Myelination-Photoby-DanaLynnPleasant-549-85f463228b.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/DorranceDance-Myelination-Photoby-DanaLynnPleasant-549-7b324ef95e.jpg"/></a><span>Myelination © Dana Lynn Pleasant</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/DorranceDance-JungleBlues-Photoby-DanaLynnPleasant-121-7aa8b377c8.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/DorranceDance-JungleBlues-Photoby-DanaLynnPleasant-121-9dea2943d8.jpg"/></a><span>Jungle Blues © Dana Lynn Pleasant</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="poet3">
+				<h4>Palmetto Poets: As We Breathe We Hope | November 29</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-df6afec110.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Peace Voices</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Matthew-Foley-d752b3e469.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Matthew-Foley-copy-52627526c0.jpg"/></a><span>Matthew Foley</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Monifa-Lemons-Photo-5449eb0ee4.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Monifa-Lemons-Photo-copy-10be7a9691.jpg"/></a><span>Monifa Lemons</span></span>
+				</div>
+			</div>
+			<div class="mediabox broadway" id="Hamilton">
+				<h4>Hamilton | December 4-16</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echCMsSZ1EssvrQKnZ" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Hamilton</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Nik-Walker-HAMILTON-National-Tour-c-Joan-Marcus-2018-2-49a834bec6.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Nik-Walker-HAMILTON-National-Tour-c-Joan-Marcus-2018-2-0f2fcbc345.jpg"/></a><span>Joseph Morales and Nik Walker - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Jon-Patrick-Walker-HAMILTON-National-Tour-c-Joan-Marcus-2018-b206e082d3.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Jon-Patrick-Walker-HAMILTON-National-Tour-c-Joan-Marcus-2018-c03758ba33.jpg"/></a><span>Jon Patrick Walker - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Company-HAMILTON-National-Tour-c-Joan-Marcus-2018-133f0287c8.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Company-HAMILTON-National-Tour-c-Joan-Marcus-2018-b72af81432.jpg"/></a><span>Company - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Elijah-Malcomb-Joseph-Morales-Kyle-Scatliffe-Fergie-L.-Philippe-and-Company-HAMILTON-National-Tour-c-Joan-Marcus-2018-da84d90789.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Elijah-Malcomb-Joseph-Morales-Kyle-Scatliffe-Fergie-L.-Philippe-and-Company-HAMILTON-National-Tour-c-Joan-Marcus-2018-7da68bcbca.jpg"/></a><span>Elijah Malcomb, Joseph Morales, Kyle Scatliffe, Fergie L. Philippe and Company - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Company-HAMILTON-National-Tour-c-Joan-Marcus-2018-46dd230a45.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Company-HAMILTON-National-Tour-c-Joan-Marcus-2018-f3e9ba0ea8.jpg"/></a><span>Joseph Morales and Company - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Shoba-Narayan-and-Joseph-Morales-HAMILTON-National-Tour-c-Joan-Marcus-2018-4040ae9f18.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Shoba-Narayan-and-Joseph-Morales-HAMILTON-National-Tour-c-Joan-Marcus-2018-3ac34758a5.jpg"/></a><span>Shoba Narayan and Joseph Morales - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Shoba-Narayan-TaRea-Campbell-and-Nyla-Sostre-HAMILTON-National-Tour-c-Joan-Marcus-2018-ede573ed33.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Shoba-Narayan-TaRea-Campbell-and-Nyla-Sostre-HAMILTON-National-Tour-c-Joan-Marcus-2018-7fa591f3ba.jpg"/></a><span>Shoba Narayan, Ta'Rea Campbell and Nyla Sostre - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Nik-Walker-HAMILTON-National-Tour-c-Joan-Marcus-2018-f61f9d0ff4.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Nik-Walker-HAMILTON-National-Tour-c-Joan-Marcus-2018-c430983afb.jpg"/></a><span>Nik Walker - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Nik-Walker-HAMILTON-National-Tour-C-Joan-Marcus-2018-21fb1e13ff.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Nik-Walker-HAMILTON-National-Tour-C-Joan-Marcus-2018-bd100ae8dd.jpg"/></a><span>Joseph Morales and Nik Walker - HAMILTON National Tour - (C) Joan Marcus 2018</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Marcus-Choi-HAMILTON-National-Tour-c-Joan-Marcus-2018-4541a95f83.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Joseph-Morales-and-Marcus-Choi-HAMILTON-National-Tour-c-Joan-Marcus-2018-aa26970cb3.jpg"/></a><span>Joseph Morales and Marcus Choi - HAMILTON National Tour - (c) Joan Marcus 2018</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Southern">
+				<h4>Southern Voices (Passport Field Trip Series) | January 9-10</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Southern-Voices-cdce42a781.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-southern.jpg"/></a><span>Southern Voices</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="poet4">
+				<h4>Southern Voices: Black, White and Blues | January 10</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-df6afec110.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Peace Voices</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Scott-Ainslie-and-Glenis-Redmond-644133a5e5.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Scott-Ainslie-and-Glenis-Redmond-copy-48fa8d9dd7.jpg"/></a><span>Scott Ainslie and Glenis Redmond</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="sierra">
+				<h4>Sierra Hull | January 12</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Singer-songwriters-5982a101fc.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Singer Songwriters</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/SierraHull_B4A3579-4a6d94e2ec.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/SierraHull_B4A3579-b7ed2d944d.jpg"/></a><span>Sierra Hull</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/SierraHull_B4A3127-babf81611c.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/SierraHull_B4A3127-5c3631a760.jpg"/></a><span>Sierra Hull</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/SierraHull_B4A4137-efe28c22fe.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/SierraHull_B4A4137-407f3c00db.jpg"/></a><span>Sierra Hull</span></span>
+				</div>
+			</div>
+			<div class="mediabox broadway" id="Saigon">
+				<h4>Miss Saigon | January 15-20</h4>
+				<a class="return" href="#top">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a class="mediaitem doc" href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a> 
+				<a class="mediaitem doc" href="https://1drv.ms/v/s!AoZLkE-UE1echDMfL1CDK9Ddoizm" style="margin-top: 0px;"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Miss Saigon</a> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/MISS-SAIGON.-Ashley-Gilmour-Chris-and-Sooha-Kim-Kim.-Photo-Johan-Persson-09a329f8ac.jpg" target="_blank"><img alt="" src="resources/images/perf/jpeg/m-saigon-t1.jpg" /></a><span>MISS SAIGON. Ashley Gilmour 'Chris' and Sooha Kim 'Kim'. Photo Johan Persson</span></span> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/MISS-SAIGON.-Company.-Photo-Cameron-Mackintosh-f75cafbc0c.jpg" target="_blank"><img alt="" src="resources/images/perf/jpeg/m-saigon-t2.jpg" /></a><span>MISS SAIGON. Company. Photo Cameron Mackintosh</span></span> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/MISS-SAIGON.-Company.-Photo-Johan-Persson-2e9ad07e07.jpg" target="_blank"><img alt="" src="resources/images/perf/jpeg/m-saigon-t3.jpg" /></a><span>MISS SAIGON. Company. Photo Johan Persson</span></span> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/MISS-SAIGON.-Gerald-Santos-Thuy-and-Sooha-Kim-Kim.-Photo-Johan-Persson-f8c01601aa.jpg" target="_blank"><img alt="" src="resources/images/perf/jpeg/m-saigon-t4.jpg" /></a><span>MISS SAIGON. Gerald Santos 'Thuy' and Sooha Kim 'Kim'. Photo Johan Persson</span></span> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/MISS-SAIGON.-Joreen-Bautista-Kim.-Photo-Johan-Persson-d3c2aacff0.jpg" target="_blank"><img alt="" src="resources/images/perf/jpeg/m-saigon-t5.jpg" /></a><span>MISS SAIGON. Joreen Bautista 'Kim'. Photo Johan Persson</span></span> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/MISS-SAIGON.-Red-Concepcion-The-Engineer-and-company.-Photo-by-Johan-Persson-3a3b7d8675.jpg" target="_blank"><img alt="" src="resources/images/perf/jpeg/m-saigon-t6.jpg" /></a><span>MISS SAIGON. Red Concepcion 'The Engineer' and company. Photo by Johan Persson</span></span> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/MISS-SAIGON.-Sooha-Kim-Kim.-Photo-Johan-Persson-2-e64fa8103d.jpg" target="_blank"><img alt="" src="resources/images/perf/jpeg/m-saigon-t7.jpg" /></a><span>MISS SAIGON. Sooha Kim 'Kim'. Photo Johan Persson</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="songwriter2">
+				<h4>An Evening of Original Music with Edwin McCain, Maia Sharp, and Gabe Dixon | January 25</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-Songwriters-7015b006dc.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Songwriter Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Gabe-Dixon-7e41afd3f2.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Gabe-Dixon-67333c557c.jpg"/></a><span>Gabe Dixon</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Erth">
+				<h4>Erth's Prehistoric Aquarium (Passport Field Trip Series) | January 28</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Erths-Prehistoric-Aquarium-credit_heidrun_lohr-8fe03473b9.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-erth.jpg"/></a><span>Erth's Prehistoric Aquarium by Heidrun Lohr</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Harriets">
+				<h4>The Three Harriets (Passport Field Trip Series) | February 4-5</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/The-Three-Harriets-3ac7bf1860.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-harriets.jpg"/></a><span>The Three Harriets</span></span>
+				</div>
+			</div>
+			<div class="mediabox broadway" id="Bronx">
+				<h4>A Bronx Tale | February 5-10</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echCgUkM4XA2yBcV-S" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - A Bronx Tale</a>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/a-Finale-c4f5c9d9ba.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/a-Finale-71ebf6d37e.jpg"/></a><span>Joe Barbara (Sonny, left) and Joey Barreiro (Calogero, center), with the Touring Company of A BRONX TALE. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/b-Roll-Em-7bac1c2c5c.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/b-Roll-Em-493c3d0705.jpg"/></a><span>Joe Barbara (Sonny) and Frankie Leoni (Young C) and Company of A BRONX TALE. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/c-Young-C-and-Lorenzo-bc3c0bbf89.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/c-Young-C-and-Lorenzo-5b80f75fe3.jpg"/></a><span>Frankie Leoni (Young C) and Richard H. Blake (Lorenzo). Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/d-Lorenzo-Young-C-and-Rosina-2166dfe528.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/d-Lorenzo-Young-C-and-Rosina-3dd6a0fa83.jpg"/></a><span>Richard H. Blake (Lorenzo), Frankie Leoni (Young C) and Michelle Aravena (Rosina). Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/e-Webster-Avenue-05f9a89f25.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/e-Webster-Avenue-b6a2365f76.jpg"/></a><span>(center) Brianna-Marie Bell, with (l to r) Antonio Beverly, Ashley McManus, Brandi Porter and Jason Williams. (rear) Kirk Lydell. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/f-Belmont-Avenue-dance-jump-c13a6d7154.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/f-Belmont-Avenue-dance-jump-90cba88e80.jpg"/></a><span>(foreground, l to r) Haley Hannah, Joseph Sammour, Joshua Michael Burrage, Giovanni DiGabriele, Sean Bell, Kyli Rae. (background, l to r) Robert Pieranunzi, Michael Barra, Paul Salvatoriello and Mike Backes. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/g-Belmont-Avenue-women-and-men-e8284c843b.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/g-Belmont-Avenue-women-and-men-c51bf3f70d.jpg"/></a><span>(foreground, l to r) Haley Hannah, Kyli Rae, Joseph Sammour, Giovanni DiGabriele, Joshua Michael Burrage and Sean Bell. (background, l to r) Robert Pieranunzi, Michael Barra, Paul Salvatoriello. (on balconies, l to r) Joey Calveri, Mike Backes and John Gardiner. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/h-Jane-and-Calogero-d4d54e977f.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/h-Jane-and-Calogero-3c48bafede.jpg"/></a><span>Brianna-Marie Bell (Jane) and Joey Barreiro (Calogero). Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/i-Baseball-Swing-3ddf35ec81.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/i-Baseball-Swing-44cfed5241.jpg"/></a><span>Giovanni DiGabriele, Sean Bell, Joseph Sammour, Frankie Leoni and Joshua Michael Burrage. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/j-Calogero-and-Young-C-2d8e4d3a52.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/j-Calogero-and-Young-C-63650bd629.jpg"/></a><span>Joey Barreiro (Calogero) and Frankie Leoni (Young C). Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/k-Jane-and-Friends-62864168d6.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/k-Jane-and-Friends-1a14b56603.jpg"/></a><span>(front) Brianna-Marie Bell (Jane) with Brandi Porter and Ashley McManus. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/l-Rosina-and-Lorenzo-6b9c39ffe4.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/l-Rosina-and-Lorenzo-c9deee6136.jpg"/></a><span>Michelle Aravena (Rosina) and Richard H. Blake (Lorenzo). Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/m-Sonny-and-Young-C-4d285518aa.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-Sonny-and-Young-C-f1db03fe21.jpg"/></a><span>Joe Barbara (Sonny) and Frankie Leoni (Young C). Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/n-Sonny-and-Calogero-32a8351d53.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/n-Sonny-and-Calogero-895de3a576.jpg"/></a><span>Joe Barbara (Sonny) and Joey Barreiro (Calogero). Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/o-Sonny-and-Lorenzo-and-Chez-Bippy-5de6b861b4.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/o-Sonny-and-Lorenzo-and-Chez-Bippy-f8af5f974d.jpg"/></a><span>Joe Barbara (Sonny) and Richard H. Blake (Lorenzo); (at table) John Gardiner, Robert Pieranunzi and Paul Salvatoriello. Photo: Joan Marcus.</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/p-Baseball-Swing-alternate-c1f9f64970.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/p-Baseball-Swing-alternate-2a2a0ebf18.jpg"/></a><span>Giovanni DiGabriele, Sean Bell, Joseph Sammour, Shane Pry and Joshua Michael Burrage. Photo: Joan Marcus.</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="David">
+				<h4>David Drake (Dave the Potter) (Passport Field Trip Series) | February 6-7</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/David-Drake-Jonathan-Green-Images-for-Dave-the-Potter-Collaborationjpg_Page2_Image1-df7a804a90.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-david.jpg"/></a><span>David Drake</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Call">
+				<h4>Call of the Wild: Illustrated Edition (Passport Field Trip Series) | February 11-12</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Call-of-the-Wild-3586d970e2.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-call.jpg"/></a><span>Call of the Wild: Illustrated Edition</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="Berlin">
+				<h4>Berlin Philharmonic Wind Quintet | February 13</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Chamber-2018-19-34652b2a3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Chamber Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Berlin-Philharmonic-Wind-Quintet-38ad7ce5fc.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-berlin.jpg"/></a><span>Berlin Philharmonic Wind Quintet</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="holcomb">
+				<h4>The You and Me Tour: An Evening with Drew & Ellie Holcomb | February 14</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Drew-and-Ellie-Holcomb-51a7bd0b4b.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - The You and Me Tour: An Evening with Drew & Ellie Holcomb</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/holcomb1-141c651f02.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/sholcomb1-fa6df5d23e.jpg"/></a><span>Drew & Ellie Holcomb</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="Lewis">
+				<h4>Jerry Lee Lewis | February 16</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Jerry-Lee-Lewis-press-release-b463ae5851.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Jerry Lee Lewis</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/JerryLeeLewis1-7745dba4d4.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-JerryLeeLewis1-ae8e2a1da0.jpg"/></a><span>Jerry Lee Lewis</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/JerryLeeLewis2-aedb54cae4.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-JerryLeeLewis2-17531ae629.jpg"/></a><span>Jerry Lee Lewis</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/JerryLeeLewis3-c073d9f464.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-JerryLeeLewis3-e525f0efe6.jpg"/></a><span>Jerry Lee Lewis</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/JerryLeeLewis4-e639f0c102.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-JerryLeeLewis4-618fc71d56.jpg"/></a><span>Jerry Lee Lewis</span></span>
+				</div>
+			</div>
+			<div class="mediabox cultural" id="Russian">
+				<h4>Russian National Orchestra | February 17</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Music-events-added-0fadb1c93a.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Music Events</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/RussianNationalOrchestra2_cCourtesyRNO-027b19da7b.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-RussianNationalOrchestra2_cCourtesyRNO-4366c81016.jpg"/></a><span>Russian National Orchestra – Courtesy of RNO</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/RussianNationalOrchestraO1_cCourtesyRNO-b2439c16a8.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-RussianNationalOrchestraO1_cCourtesyRNO-161bace1b3.jpg"/></a><span>Russian National Orchestra – Courtesy of RNO</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="her">
+				<h4>I'm With Her: Sara Watkins – Sarah Jarosz – Aoife O’Donovan | February 19</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Singer-songwriters-5982a101fc.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Singer Songwriters</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-2db640d496.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-ff04ee3918.jpg"/></a><span>I'm With Her – Photo by Shervin Lainez</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-1-1203a7f227.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-1-a07ed4441c.jpg"/></a><span>I'm With Her – Photo by Shervin Lainez</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-2-195130e398.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-2-9850bd33c7.jpg"/></a><span>I'm With Her – Photo by Shervin Lainez</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-3-6fb11afb46.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/ImWithHer-CreditShervinLainez-3-44db73ab08.jpg"/></a><span>I'm With Her – Photo by Shervin Lainez</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="PianoGuys">
+				<h4>ThePianoGuys | February 20</h4>
+				<a class="return" href="#top">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a class="mediaitem doc" href="https://www.peacecenter.org/assets/doc/ThePianoGuys-5ed8a8e188.docx"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - ThePianoGuys</a> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Piano-Guys-1-961a3990bd.jpg" target="_blank"><img alt="" src="https://www.peacecenter.org/assets/img/m-piano1-306933ffa8.jpg" /></a><span>ThePianoGuys</span></span> 
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Piano-Guys-2-95d878c02d.jpg" target="_blank"><img alt="" src="https://www.peacecenter.org/assets/img/m-piano2-48b9378c5c.jpg" /></a><span>ThePianoGuys</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="Lara">
+				<h4>Lara St. John | February 21</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Chamber-2018-19-34652b2a3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Chamber Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Lara-St-John-crCliveBarda-4b3bde8bb6.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-lara.jpg"/></a><span>Lara St. John by Clive Barda</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="Sybarite">
+				<h4>Sybarite5 | February 24</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Chamber-2018-19-34652b2a3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Chamber Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Sybarite5-b5c8a494c2.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-sybarite.jpg"/></a><span>Sybarite5</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Sybarite2">
+				<h4>Sybarite5 (Passport Field Trip Series) | February 25</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Sybarite5-b5c8a494c2.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-sybarite.jpg"/></a><span>Sybarite5</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Currents">
+				<h4>Currents by Mayumana (Passport Field Trip Series) | February 26</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Currents-by-Mayumana-3-Photo-Credit-Zeev-Roytman-0bacc5bc39.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-currents.jpg"/></a><span>Currents by Mayumana by Zeev Roytman</span></span>
+				</div>
+			</div>
+			<div class="mediabox cultural" id="Currents2">
+				<h4>Currents by Mayumana | February 26</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Dance-events-added-afcaeecb3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Dance Events</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Mayumana-1-Photo-Credit-Zeev-Roytman-8a6c99a764.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Mayumana-1-Photo-Credit-Zeev-Roytman-d002bb41b6.jpg"/></a><span>Photo by Zeev Roytman</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Mayumana-2-Photo-Credit-Zeev-Roytman-8a763593ca.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Mayumana-2-Photo-Credit-Zeev-Roytman-8ec8a5e240.jpg"/></a><span>Photo by Zeev Roytman</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Mayumana-3-Photo-Credit-Zeev-Roytman-0bacc5bc39.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Mayumana-3-Photo-Credit-Zeev-Roytman-0a5e32aea8.jpg"/></a><span>Photo by Zeev Roytman</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Mayumana-4-Photo-Credit-Zeev-Roytman-508c4ecad7.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Mayumana-4-Photo-Credit-Zeev-Roytman-c837c752fc.jpg"/></a><span>Photo by Zeev Roytman</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="jazz2">
+				<h4>The Great American Songbook | February 27</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Fine-Arts-Center-Jazz-Series-0ae578caa0.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Fine Arts Center Jazz Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/FY19-Fine-Arts-Center-jazz-band-d2299c7e9b.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/FY19-Fine-Arts-Center-jazz-band-c64b8e4abd.jpg"/></a><span>Fine Arts Center Jazz Band</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="songwriter3">
+				<h4>An Evening of Original Music with Edwin McCain, Maia Sharp, and Jill Sobule | March 1</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-Songwriters-7015b006dc.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Songwriter Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Jill-Sobule-d19a4222e9.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Jill-Sobule-ec1bbe3b6f.jpg"/></a><span>Jill Sobule</span></span>
+				</div>
+			</div>
+			<div class="mediabox broadway" id="Mormon">
+				<h4>The Book of Mormon | March 5-10</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echCndwHQpjd4ZaAxZ" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - The Book of Mormon</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Kevin-Clay-The-Book-of-Mormon-c-Julieta-Cervantes-2017-dd7d27a5c6.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mmormon1.jpg"/></a><span>Kevin Clay - <em>The Book of Mormon</em> © Julieta Cervantes 2017.</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Kim-Exum-Conner-Peirson-The-Book-of-Mormon-c-Julieta-Cervantes-2017-280c27a1a1.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mmormon2.jpg"/></a><span>Kim Exum, Conner Peirson - <em>The Book of Mormon</em> © Julieta Cervantes 2017.</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Monica-L.-Patton-Kevin-Clay-Conner-Peirson-The-Book-of-Mormon-c-Julieta-Cervantes-2017-597bdeb937.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mmormon3.jpg"/></a><span>Monica L. Patton, Kevin Clay, Conner Peirson - <em>The Book of Mormon</em> © Julieta Cervantes 2017.</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/The-Book-of-Mormon-Company-The-Book-of-Mormon-c-Julieta-Cervantes-2017-b5186db126.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mmormon4.jpg"/></a><span>The Book of Mormon Company - <em>The Book of Mormon</em> © Julieta Cervantes 2017.</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="Celtic">
+				<h4>Celtic Woman | March 15</h4>
+				<a class="return" href="#top">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a class="mediaitem doc" href="https://www.peacecenter.org/assets/doc/Celtic-Woman-c52daeb21e.docx"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Celtic Woman</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/CW-GroupPhoto_2426x1365-bf7808d185.jpg" target="_blank"><img alt="" src="https://www.peacecenter.org/assets/img/sCW-GroupPhoto_2426x1365-97378a6f66.jpg" /></a><span>Celtic Woman</span></span>
+				</div>
+			</div>
+			<div class="mediabox cultural" id="Dog">
+				<h4>Tap Dogs | March 22</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Dance-events-added-afcaeecb3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Dance Events</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echDAh_x5cOu8A4ZWa" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Tap Dogs</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/TAP_DOGS2-photo-Ralf-Brinkhoff-cfac259126.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/TAP_DOGS2-photo-Ralf-Brinkhoff-46c27b668c.jpg"/></a><span>Photo by Ralf Brinkhoff</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/TAPDOGS3photo_Ralf_Brinkhoff-7f3b900a20.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/TAPDOGS3photo_Ralf_Brinkhoff-a9196a644e.jpg"/></a><span>Photo by Ralf Brinkhoff</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/TAP-DOGS4-photo-Ralf-Brinkhoff-2421496311.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/TAP-DOGS4-photo-Ralf-Brinkhoff-2421496312-fba2d4b434.jpg"/></a><span>Photo by Ralf Brinkhoff</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="poet5">
+				<h4>He Said/She Said | March 26</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-df6afec110.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Peace Voices</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Len-Lawson-2a64d77d41.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Len-Lawson-copy-c0cce9a7fe.jpg"/></a><span>Len Lawson</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Jacqueline-Johnson-Color-291eff713c.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Jacqueline-Johnson-Color-copy-129a41787c.jpg"/></a><span>Jacqueline Johnson</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="patton">
+				<h4>Patton Oswalt | March 30</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Patton-Oswalt-8c890116f2.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Patton Oswalt</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Patton-3951295142.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Patton-3951295143-d2b65915f4.jpg"/></a><span>Patton Oswalt</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="poet6">
+				<h4>A Poet's Dream: Past & Present | April 10</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-df6afec110.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Peace Voices</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Jacqueline-Woodson-Headshot_credit-Toshi-Widoff-Woodson-09e6073799.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Jacqueline-Woodson-Headshot_credit-Toshi-Widoff-Woodson-copy-ae44c1aeb2.jpg"/></a><span>Jacqueline-Woodson by Toshi Widoff Woodson</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="Avital">
+				<h4>Avital meets Avital | April 11</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Chamber-2018-19-34652b2a3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Chamber Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Avital-meets-Avital-9b846a069d.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-avital.jpg"/></a><span>Avital meets Avital</span></span>
+				</div>
+			</div>
+			<div class="mediabox passport" id="Avital2">
+				<h4>Avital meets Avital (Passport Field Trip Series) | April 12</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Avital-meets-Avital-9b846a069d.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-avital.jpg"/></a><span>Avital meets Avital</span></span>
+				</div>
+			</div>
+			<div class="mediabox broadway" id="CFA">
+				<h4>Come From Away | April 16-21</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echCHFNJ92XBtrkZdT" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Come From Away</a>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/0849_The-First-North-American-Tour-Company-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-682ba599f2.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/0849_The-First-North-American-Tour-Company-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-f7f23586a0.jpg"/></a><span>The First North American Tour Company of COME FROM AWAY, Photo by Matthew Murphy, 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/9195_The-First-North-American-Tour-Company-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-42dcbda460.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/9195_The-First-North-American-Tour-Company-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-471cb8e3e5.jpg"/></a><span>The First North American Tour Company of COME FROM AWAY, Photo by Matthew Murphy, 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/1427_Nick-Duckart-Kevin-Carolan-Andrew-Samonsky-and-Company-in-the-First-North-American-Tour-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-8620bc1d30.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/1427_Nick-Duckart-Kevin-Carolan-Andrew-Samonsky-and-Company-in-the-First-North-American-Tour-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-b010cef59f.jpg"/></a><span>Nick Duckart, Kevin Carolan, Andrew Samonsky and Company in the First North American Tour of COME FROM AWAY, Photo by Matthew Murphy, 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/The-First-North-American-Tour-Cast-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-76b011bae1.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/The-First-North-American-Tour-Cast-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-c5e919c57e.jpg"/></a><span>The First North American Tour Cast of COME FROM AWAY, Photo by Matthew Murphy, 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/1381_The-First-North-American-Tour-Company-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-ed6e51140b.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/1381_The-First-North-American-Tour-Company-of-COME-FROM-AWAY-Photo-by-Matthew-Murphy-2018-copy-331cfe1940.jpg"/></a><span>The First North American Tour Company of COME FROM AWAY, Photo by Matthew Murphy, 2018</span></span>
+
+				</div>
+			</div>
+			<div class="mediabox passport" id="Villalobos">
+				<h4>Villalobos Brothers (Passport Field Trip Series) | April 23-25</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/2018-19-Peace-Passport-Field-Trip-Series-a2282c5d78.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Peace Passport Field Trip Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Villalobos-Brothers-4734982f5e.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/media-villalobos.jpg"/></a><span>Villalobos Brothers</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="jazz3">
+				<h4>Jazz and Beyond | May 1</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Fine-Arts-Center-Jazz-Series-0ae578caa0.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Fine Arts Center Jazz Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/FY19-Fine-Arts-Center-jazz-band-d2299c7e9b.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/FY19-Fine-Arts-Center-jazz-band-c64b8e4abd.jpg"/></a><span>Fine Arts Center Jazz Band</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="songwriter4">
+				<h4>An Evening of Original Music with Edwin McCain, Maia Sharp, and David Wilcox | May 3</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-Songwriters-7015b006dc.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Songwriter Series</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/David-Wilcox-dac0a7b922.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/David-Wilcox-f5259d0747.jpg"/></a><span>David Wilcox</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="Illusion">
+				<h4>The Illusionists: Live From Broadway | May 4-5</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/The-Illusionists-press-release-c5dd69b391.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - The Illusionists: Live From Broadway</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echCzbrrpjLGtVZy2k" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - The Illusionists: Live From Broadway</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Illusionists_AhHaLim_ClaudiaJames-67e5de0bfa.JPG" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-Illusionists_AhHaLim_ClaudiaJames-be9363d31a.jpg"/></a><span>Illusionists Ah Ha Lim © Claudia James</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Kevin-James-The-Inventor-Operation-JoanMarcus-133fbbd1b0.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-Kevin-James-The-Inventor-Operation-JoanMarcus-76edfd2062.jpg"/></a><span>Kevin James The Inventor Operation © Joan Marcus</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/The-Ilusionists-Kevin-James-The-Inventor-7ef5fc0f64.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-The-Ilusionists-Kevin-James-The-Inventor-a0c317aba0.jpg"/></a><span>The Ilusionists Kevin James The Inventor</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/The-Illusionists-Jonathan-Goodwin-Bed-of-Nail-4efdcaefba.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/m-The-Illusionists-Jonathan-Goodwin-Bed-of-Nail-d69fadd456.jpg"/></a><span>The Illusionists Jonathan Goodwin Bed of Nail</span></span>
+				</div>
+			</div>
+			<div class="mediabox cultural" id="Harlem">
+				<h4>Dance Theatre of Harlem | May 11</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Dance-events-added-afcaeecb3d.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Dance Events</a>
+				<a href="https://1drv.ms/v/s!AoZLkE-UE1echC8b_KtC9ORLOd9V" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>B-Roll - Dance Theatre of Harlem</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/DanceTheatreofHarlem_Da-Von-Doane-Silva.-Photo-by-Rachel-Neville-9b50af7216.png" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/DanceTheatreofHarlem_Da-Von-Doane-Silva.-Photo-by-Rachel-Neville-daa681e950.jpg"/></a><span>Dance Theatre of Harlem – Amanda Smith. Photo by Rachel Neville</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/DanceTheatreofHarlem_Amanda-Smith.-Photo-by-Rachel-Neville-30ef199635.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/DanceTheatreofHarlem_Amanda-Smith.-Photo-by-Rachel-Neville-7c9df87b18.jpg"/></a><span>Dance Theatre of Harlem – Da' Von Doane and Ingrid Silva. Photo by Rachel Neville</span></span>
+				</div>
+			</div>
+			<div class="mediabox singles" id="jeanne">
+				<h4>Jeanne Robertson | May 17</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Jeanne-Robertson-946df5e44f.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Jeanne Robertson</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/JeanneE2015-3b8a914e58.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/JeanneE2015-dc13c0307a.jpg"/></a><span>Jeanne Robertson</span></span>
+				</div>
+			</div>
+			<div class="mediabox broadway" id="Dolly">
+				<h4>Hello, Dolly! | May 28 – June 2</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/1-Hello-Dolly-Original-Broadway-Company-of-the-Tony-Award-winning-Best-Musical-Revival-Photograph-Julieta-Cervantes-2017-3c344e0fb5.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mdolly1.jpg"/></a><span><em>Hello, Dolly!</em> Original Broadway Company of the Tony Award-winning Best Musical Revival – Photograph Julieta Cervantes 2017.</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/2-Hello-Dolly-Original-Broadway-Company-of-the-Tony-Award-winning-Best-Musical-Revival-Photograph-Julieta-Cervantes-2017-18055f4bc5.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mdolly2.jpg"/></a><span><em>Hello, Dolly!</em> Original Broadway Company of the Tony Award-winning Best Musical Revival – Photograph Julieta Cervantes 2017.</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/3-Hello-Dolly-Original-Broadway-Company-of-the-Tony-Award-winning-Best-Musical-Revival-Photograph-Julieta-Cervantes-2017-4078358397.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mdolly3.jpg"/></a><span><em>Hello, Dolly!</em> Original Broadway Company of the Tony Award-winning Best Musical Revival – Photograph Julieta Cervantes 2017.</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/4-Hello-Dolly-Original-Broadway-Company-of-the-Tony-Award-winning-Best-Musical-Revival-Photograph-Julieta-Cervantes-2017-1569ea9c41.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mdolly4.jpg"/></a><span><em>Hello, Dolly!</em> Original Broadway Company of the Tony Award-winning Best Musical Revival – Photograph Julieta Cervantes 2017.</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Betty-Buckley-Photo-by-Scogin-Mayo-7762008fa1.jpg" target="_blank"><img alt ="" src="resources/images/perf/jpeg/mdolly5.jpg"/></a><span>Betty Buckley – Photo by Scogin Mayo.</span></span>
+				</div>
+			</div>
+			<div class="mediabox community" id="poet7">
+				<h4>Lineage and Place | May 30</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://www.peacecenter.org/assets/doc/Peace-Voices-df6afec110.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - Peace Voices</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Alicia-Jo-Rabins-670aa1aea5.png" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Alicia-Jo-Rabins-cf9b4625b5.jpg"/></a><span>Alicia Jo Rabins</span></span>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Kevin-Coval-383768ac7d.png" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/Kevin-Coval-87ce8ea39e.jpg"/></a><span>Kevin Coval</span></span>
+				</div>
+			</div>
+			<div class="mediabox broadway" id="Hansen">
+				<h4>Dear Evan Hansen | July 2-7</h4>
+				<a href="#top" class="return">Return to top</a>
+				<div class="mediaContent flex between rowWrap">
+				<a href="https://tickets.peacecenter.org/ArticleMedia/Files/2018-2019 Broadway announcement.docx" class="mediaitem doc"><i class="fas fa-arrow-alt-circle-down"></i>Press Release - 2018-2019 Broadway Season</a>
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/Ben-Levi-Ross-as-Evan-Hansen-and-the-Company-of-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-93241dfdcf.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/sBen-Levi-Ross-as-Evan-Hansen-and-the-Company-of-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-d73c8832fe.jpg"/></a><span>Ben Levi Ross as 'Evan Hansen' and the Company of the First North American Tour of Dear Evan Hansen. Photo by Matthew Murphy. 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/2-The-Company-of-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-03fd695118.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/2-The-Company-of-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-4685e437ba.jpg"/></a><span>The Company of the First North American Tour of Dear Evan Hansen. Photo by Matthew Murphy. 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/3-Ben-Levi-Ross-as-Evan-Hansen-Aaron-Lazar-as-Larry-Murphy-Christiane-Noll-as-Cynthia-Murphy-and-Maggie-McKenna-as-Zoe-Murphy-in-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-f05b156880.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/3-Ben-Levi-Ross-as-Evan-Hansen-Aaron-Lazar-as-Larry-Murphy-Christiane-Noll-as-Cynthia-Murphy-and-Maggie-McKenna-as-Zoe-Murphy-in-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-a4e62fd961.jpg"/></a><span>Ben Levi Ross as 'Evan Hansen,' Aaron Lazar as 'Larry Murphy,' Christiane Noll as 'Cynthia Murphy' and Maggie McKenna as 'Zoe Murphy' in the First North American Tour of Dear Evan Hansen. Photo by Matthew Murphy. 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/4-Ben-Levi-Ross-as-Evan-Hansen-and-Jessica-Phillips-as-Heidi-Hansen-in-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-8594aff0c0.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/4-Ben-Levi-Ross-as-Evan-Hansen-and-Jessica-Phillips-as-Heidi-Hansen-in-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-0e5beb6cd7.jpg"/></a><span>Ben Levi Ross as 'Evan Hansen' and Jessica Phillips as 'Heidi Hansen' in the First North American Tour of Dear Evan Hansen. Photo by Matthew Murphy. 2018</span></span>
+
+				<span class="mediaitem"><a href="https://www.peacecenter.org/assets/img/5-Christiane-Noll-as-Cynthia-Murphy-and-Jessica-Phillips-as-Heidi-Hansen-in-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-99ff07e38f.jpg" target="_blank"><img alt ="" src="https://www.peacecenter.org/assets/img/5-Christiane-Noll-as-Cynthia-Murphy-and-Jessica-Phillips-as-Heidi-Hansen-in-the-First-North-American-Tour-of-Dear-Evan-Hansen.-Photo-by-Matthew-Murphy.-2018-4a7941a8d9.jpg"/></a><span>Christiane Noll as 'Cynthia Murphy' and Jessica Phillips as 'Heidi Hansen' in the First North American Tour of Dear Evan Hansen. Photo by Matthew Murphy. 2018</span></span>
+
+			</div>
+		</div>
+	</div>
+</div>
+	
+	<footer class="flex middle center">
+		<span class="maxW" style="width: 100%; font-size: 0.9rem; text-align: center;">© Peace Center | 2018</span>
+	</footer>
+	
+</body>
+	
+</html>

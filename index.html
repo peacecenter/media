@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Media Center Concept</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+	<link href="resources/style/style.css" type="text/css" rel="stylesheet">
+	<script src ="resources/js/jquery-11.0.min.js"></script>
+	<script src ="resources/js/jquery.ready.js"></script>
+	<script>
+		function validateForm() {
+			var x = document.forms["login"]["user"].value;
+			var y = document.forms["login"]["pass"].value;
+			if (x !== "MediaCenter") {
+				alert("Invalid Login");
+				return false;
+			} else if (y !=="PeaceCenter15") {
+				alert("Invalid Login");
+				return false;
+			} else {
+				return true;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	
+	<header class="flex middle center">
+		<div class="maxW flex middle between rowNoWrap" style="width: 100%;">
+			<img alt="Peace Center Logo" src="resources/images/pclogo.png">
+			<a href="#" class="toggle" style="position: relative; z-index: 25;">Open Menu</a>
+		</div>
+	</header>
+	<nav class="mainMenu">
+		<ul class="flex rowNoWrap center">
+			<li class="top"><a href="https://www.peacecenter.org">Main Site</a></li>
+		</ul>
+	</nav>	
+	
+	<div class="loginBody flex middle center columnNoWrap" style="height: calc(100vh - 222px); background-image: url('resources/images/loginbg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+		<h1>Login to access the Media Center</h1>
+		<div class="login flex middle center columnNoWrap">
+			
+			<form name="login" action="performances.html" onSubmit="return validateForm()" class="flex middle center columnNoWrap">
+				<input class="field" type="text" placeholder="Username" name="user">
+				<input class="field" type="password" placeholder="Password" name="pass">
+				<input class="submit" type="submit" value="Login">
+			</form>
+		</div>
+		<a href="mailto:tmcnamara@peacecenter.org?subject=Media Center Access Requeest" style="color: #ecedee; font-style: italic; text-decoration: none; position: relative; z-index: 15;">Request access</a>
+	</div>
+	
+	<footer class="flex middle center">
+		<span class="maxW" style="width: 100%; font-size: 0.9rem; text-align: center;">© Peace Center | 2018</span>
+	</footer>
+	
+</body>
+	
+</html>
