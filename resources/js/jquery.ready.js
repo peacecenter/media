@@ -34,7 +34,7 @@ $(document).ready(function() {
 		$(".subNav").slideToggle();
 	});
 	$(".toggle").click(function(){
-		if ($(".mainMenu").hasClass("active")) {
+		if ($(".mainMenu, .mainMenu.home").hasClass("active")) {
 			$(".toggle").text("Close Menu");
 		} else {
 			$(".toggle").text("Open Menu");
